@@ -1,0 +1,166 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marcin Czachurski - Profile</title>
+    <meta name="author" content="Marcin Czachurski">
+    <meta name="description" content="Marcin Czachurski home page.">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/pojoaque.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/languages/swift.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        body {
+            background-color: #292a2f;
+            font-size: 0.9em;
+        }
+
+        .hljs {
+            background: inherit;
+        }
+
+        .simulator {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-7 col-xl-8">
+                <pre>
+                    <code class="swift">
+import SwiftUI
+
+struct ContentView : View {
+
+    var body: some View {
+        VStack(alignment: .center) {
+            VStack(alignment: .center) {
+                Image("profile").clipShape(Circle()).shadow(radius: 10)
+                Text("Marcin Czachurski").font(.title)
+                Text("#iOS/#dotnet developer, #Apple  fanboy").font(.subheadline)
+            }
+
+            VStack(alignment: .leading) {
+
+                TitleView(title: "Bio")
+                Text("I'm a software developer since almost two decades. I'm working
+                    mostly on enterprise applications, however in my free time I'm creating
+                    applications for iOS and macOS in my favorite language: Swift. I live
+                    in Wrocław/Poland with my lovely wife and daughter.")
+                    .font(.subheadline)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(10)
+
+                TitleView(title: "Socials")
+                SocialView(icon: "twitter", link: "<a href="https://twitter.com/mczachurski">https://twitter.com/mczachurski</a>")
+                SocialView(icon: "medium", link: "<a href="https://medium.com/@mczachurski">https://medium.com/@mczachurski</a>")
+                SocialView(icon: "github", link: "<a href="https://github.com/mczachurski">https://github.com/mczachurski</a>")
+
+                TitleView(title: "Programming languages")
+                HStack {
+                    TagView(name: "Swift")
+                    TagView(name: "C#")
+                    TagView(name: "Typescript")
+                }
+
+                TitleView(title: "Portfolio")
+                ScrollView(showsHorizontalIndicator: false) {
+                    HStack(alignment: .top, spacing: 0) {
+                        ApplicationView(icon: "wallpapper",
+                                        name: "Wallpapper",
+                                        link: "<a href="https://github.com/mczachurski/wallpapper">https://github.com/mczachurski/wallpapper</a>")
+                        ApplicationView(icon: "vcoin",
+                                        name: "VCoin",
+                                        link: "<a href="https://github.com/mczachurski/vcoin">https://github.com/mczachurski/vcoin</a>")
+                        ApplicationView(icon: "mikroservices",
+                                        name: "Mikroservices",
+                                        link: "<a href="https://github.com/Mikroservices">https://github.com/Mikroservices</a>")
+                    }
+                }.frame(height: 110)
+            }.padding(.leading, 15)
+
+            Spacer()
+        }
+    }
+}
+
+struct TagView: View {
+    let name: String
+
+    var body: some View {
+        HStack {
+            Text(name).foregroundColor(Color.white)
+        }.padding(5).background(Color.accent, cornerRadius: 8)
+    }
+}
+
+struct ApplicationView: View {
+    let icon: String
+    let name: String
+    let link: String
+
+    var body: some View {
+        VStack {
+            Image(icon).cornerRadius(15)
+            Text(name).font(.caption)
+        }.padding(.trailing, 10)
+    }
+}
+
+struct TitleView: View {
+    let title: String
+
+    var body: some View {
+        HStack {
+            Text(title).font(.headline)
+            Spacer()
+        }.padding(.top, 5)
+    }
+}
+
+struct SocialView: View {
+    let icon: String
+    let link: String
+
+    var body: some View {
+        HStack {
+            Image(icon)
+            Text(link).font(.subheadline)
+        }
+    }
+}
+
+extension Color {
+    static let accent = Color(red: 255/255.0, green: 65/255.0, blue: 129/255.0)
+}
+
+#if DEBUG
+struct ContentView_Previews : PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+#endif
+                    
+                    </code>
+                </pre>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <div class="simulator">
+                    <img src="profile@2x.png" width="420px" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
