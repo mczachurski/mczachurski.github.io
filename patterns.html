@@ -1,0 +1,115 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marcin Czachurski - Gallery</title>
+    <meta name="author" content="Marcin Czachurski">
+    <meta name="description" content="Marcin Czachurski - gallery.">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- nanogallery2 -->
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+    <style>
+        body {
+            background-color: #292a2f;
+            color: #f1f1f1;
+            font-size: 0.9em;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            color: #f1f1f1;
+            font-family: 'Teko', sans-serif;
+        }
+    </style>
+    <script>
+        function prepareGallery() {
+            jQuery('#nanogallery2').nanogallery2({
+
+                // GALLERY AND THUMBNAIL LAYOUT
+                thumbnailHeight: '400', thumbnailWidth: 'auto',
+                // galleryDisplayMode: 'pagination',                 // gallery pagination mode
+                // galleryMaxRows: 3,                                // gallery with max 3 rows
+                // gallerySorting: 'random',
+                thumbnailAlignment: 'fillWidth',
+                thumbnailL1GutterWidth: 20,
+                thumbnailL1GutterHeight: 20,
+                thumbnailBorderHorizontal: 1,
+                thumbnailBorderVertical: 1,
+
+                // THUMBNAIL TOOLS & LABEL
+                thumbnailL1Label: { display: true, position:'overImageOnTop', hideIcons: true, titleFontSize: '1em', align: 'left'},
+                thumbnailToolbarImage :  { topLeft: 'select', bottomRight : 'featured,display,download,cart' },
+
+                // DISPLAY ANIMATION
+                thumbnailDisplayTransition: 'flipUp',       // thumbnail display animation
+                thumbnailDisplayTransitionDuration: 400,
+                thumbnailDisplayInterval: 200,
+                thumbnailDisplayOrder: 'rowByRow',
+
+                // THUMBNAIL'S HOVER ANIMATION
+                thumbnailHoverEffect2: 'toolsSlideUp|labelSlideDown',
+                touchAnimation: true,
+                touchAutoOpenDelay: -1,
+
+                // GALLERY THEME
+                galleryTheme : { 
+                    thumbnail: { titleShadow : 'none', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#fff' },
+                    navigationPagination :  { background: '#3C4B5B', color: '#fff', colorHover: '#aaa', borderRadius: '4px' },
+                },
+
+                // DEEP LINKING
+                locationHash: false
+            });
+        }
+
+        $( document ).ready(function() {
+            prepareGallery();
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">MCZ</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="gallery.html">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>PATTERNS</h1>
+
+        <!-- ### start of the gallery definition ### -->
+        <div id="nanogallery2">
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00860.jpg" data-ngThumb="images/DSC00860.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00865.jpg" data-ngThumb="images/DSC00865.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00384.jpg" data-ngThumb="images/DSC00384.jpg">2021.10.05 Pattern</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00352.jpg" data-ngThumb="images/DSC00352.jpg">2021.10.02 Pattern</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00376.jpg" data-ngThumb="images/DSC00376.jpg">2021.10.02 Pattern</a>
+        </div>
+        <!-- ### end of the gallery definition ### -->
+    </div>
+</body>
+
+</html>
