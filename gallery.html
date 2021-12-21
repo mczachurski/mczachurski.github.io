@@ -7,176 +7,122 @@
     <meta name="description" content="Marcin Czachurski - gallery.">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <!-- nanogallery2 -->
-    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <style>
         body {
-            background-color: #000000;
+            background-color: #292a2f;
             color: #f1f1f1;
             font-size: 0.9em;
             font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container2 {
+            margin-top: 20px;
+            display: flex; /* or inline-flex */
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+
+        .card-title a {
+            text-decoration: none;
+            color: #1565C0;
+        }
+
+        .card-title a:visited {
+            text-decoration: none;
+            color: #1565C0;
+        }
+
+        .card-title a:hover {
+            text-decoration: none;
+            color: #1565C0;
+        }
+
+        .card-img-top {
+            width: 400px;
+        }
+
+        .card-title {
+            font-size: 1.8em;
+            color: #1565C0;
+            font-family: 'Teko', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <h1>Marcin Czachurski - Gallery</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">MCZ</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="gallery.html">Portfolio</a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- ### start of the gallery definition ### -->
-    <div id="nanogallery2" data-nanogallery2='{
-        "thumbnailWidth": "auto",
-        "thumbnailHeight": "400",
-        "thumbnailLabel": {
-          "position": "overImageOnBottom",
-          "display": false
-        }
-      }'>
+    <div class="container2">
 
-        <!-- 2021.12.18 Sobotni spacer -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC02677.jpg" data-ngThumb="images/DSC02677.jpg">2021.12.18 Sobotni spacer</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC02758.jpg" data-ngThumb="images/DSC02758.jpg">2021.12.18 Sobotni spacer</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC02763.jpg" data-ngThumb="images/DSC02763.jpg">2021.12.18 Sobotni spacer</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC02765.jpg" data-ngThumb="images/DSC02765.jpg">2021.12.18 Sobotni spacer</a>
+        <div class="card">
+            <a href="urban.html"><img class="card-img-top" src="images/DSC01718.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="urban.html">URBAN</a>
+                </h5>
+            </div>
+        </div>
 
-        <!-- 2021.12.03 Spacer do Winners -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01923.jpg" data-ngThumb="images/DSC01923.jpg">2021.12.03 Spacer do Winners</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01924.jpg" data-ngThumb="images/DSC01924.jpg">2021.12.03 Spacer do Winners</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01942.jpg" data-ngThumb="images/DSC01942.jpg">2021.12.03 Spacer do Winners</a>
+        <div class="card">
+            <a href="people.html"><img class="card-img-top" src="images/DSC02677.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="people.html">PEOPLE</a>
+                </h5>
+            </div>
+        </div>
 
-        <!-- 2021.12.01 Dworzec i ruch -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01760.jpg" data-ngThumb="images/DSC01760.jpg">2021.12.01 Dworzec i ruch</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01892.jpg" data-ngThumb="images/DSC01892.jpg">2021.12.01 Dworzec i ruch</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01905.jpg" data-ngThumb="images/DSC01905.jpg">2021.12.01 Dworzec i ruch</a>
+        <div class="card">
+            <a href="crowd.html"><img class="card-img-top" src="images/DSC01357.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="crowd.html">CROWD</a>
+                </h5>
+            </div>
+        </div>
 
-        <!-- 2021.11.28 Pierwszy śnieg -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01718.jpg" data-ngThumb="images/DSC01718.jpg">2021.11.28 Pierwszy śnieg</a>
+        <div class="card">
+            <a href="patterns.html"><img class="card-img-top" src="images/DSC00865.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="patterns.html">PATTERNS</a>
+                </h5>
+            </div>
+        </div>
 
-        <!-- 2021.11.27 Wieczorna sesja -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01700.jpg" data-ngThumb="images/DSC01700.jpg">2021.11.27 Wieczorna sesja</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01688.jpg" data-ngThumb="images/DSC01688.jpg">2021.11.27 Wieczorna sesja</a>
-
-        <!-- 2021.11.20 Jarmark świąteczny -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01623.jpg" data-ngThumb="images/DSC01623.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01621.jpg" data-ngThumb="images/DSC01621.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01630.jpg" data-ngThumb="images/DSC01630.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01616.jpg" data-ngThumb="images/DSC01616.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01613.jpg" data-ngThumb="images/DSC01613.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01604.jpg" data-ngThumb="images/DSC01604.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01601.jpg" data-ngThumb="images/DSC01601.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01569.jpg" data-ngThumb="images/DSC01569.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01562.jpg" data-ngThumb="images/DSC01562.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01557.jpg" data-ngThumb="images/DSC01557.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01556.jpg" data-ngThumb="images/DSC01556.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01544.jpg" data-ngThumb="images/DSC01544.jpg">2021.11.20 Jarmark świąteczny</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01535.jpg" data-ngThumb="images/DSC01535.jpg">2021.11.20 Jarmark świąteczny</a>
-
-        <!-- 2021.11.17 Spacer dworzec i okolice -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01512.jpg" data-ngThumb="images/DSC01512.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01504.jpg" data-ngThumb="images/DSC01504.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01496.jpg" data-ngThumb="images/DSC01496.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01485.jpg" data-ngThumb="images/DSC01485.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01457.jpg" data-ngThumb="images/DSC01457.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01442.jpg" data-ngThumb="images/DSC01442.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01440.jpg" data-ngThumb="images/DSC01440.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01439.jpg" data-ngThumb="images/DSC01439.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01438.jpg" data-ngThumb="images/DSC01438.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01436.jpg" data-ngThumb="images/DSC01436.jpg">2021.11.17 Spacer dworzec i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01432.jpg" data-ngThumb="images/DSC01432.jpg">2021.11.17 Spacer dworzec i okolice</a>
-
-        <!-- 2021.11.11 Marsz niepodległości -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01334.jpg" data-ngThumb="images/DSC01334.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01338.jpg" data-ngThumb="images/DSC01338.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01357.jpg" data-ngThumb="images/DSC01357.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01381.jpg" data-ngThumb="images/DSC01381.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01385.jpg" data-ngThumb="images/DSC01385.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01387.jpg" data-ngThumb="images/DSC01387.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01388.jpg" data-ngThumb="images/DSC01388.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01389.jpg" data-ngThumb="images/DSC01389.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01390.jpg" data-ngThumb="images/DSC01390.jpg">2021.11.11 Marsz niepodległości</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01391.jpg" data-ngThumb="images/DSC01391.jpg">2021.11.11 Marsz niepodległości</a>
-
-        <!-- 2021.11.10 Spacer po rynku -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01293.jpg" data-ngThumb="images/DSC01293.jpg">2021.11.10 Spacer po rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01299.jpg" data-ngThumb="images/DSC01299.jpg">2021.11.10 Spacer po rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01304.jpg" data-ngThumb="images/DSC01304.jpg">2021.11.10 Spacer po rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01309.jpg" data-ngThumb="images/DSC01309.jpg">2021.11.10 Spacer po rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01310.jpg" data-ngThumb="images/DSC01310.jpg">2021.11.10 Spacer po rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01311.jpg" data-ngThumb="images/DSC01311.jpg">2021.11.10 Spacer po rynku</a>
-
-        <!-- 2021.11.06 Strajk kobiet -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01209.jpg" data-ngThumb="images/DSC01209.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01214.jpg" data-ngThumb="images/DSC01214.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01215.jpg" data-ngThumb="images/DSC01215.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01218.jpg" data-ngThumb="images/DSC01218.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01227.jpg" data-ngThumb="images/DSC01227.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01229.jpg" data-ngThumb="images/DSC01229.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01255.jpg" data-ngThumb="images/DSC01255.jpg">2021.11.06 Strajk kobiet</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01272.jpg" data-ngThumb="images/DSC01272.jpg">2021.11.06 Strajk kobiet</a>
-
-        <!-- 2021.11.03 Spacer po Rynku -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01154.jpg" data-ngThumb="images/DSC01154.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01155.jpg" data-ngThumb="images/DSC01155.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01156.jpg" data-ngThumb="images/DSC01156.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01157.jpg" data-ngThumb="images/DSC01157.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01158.jpg" data-ngThumb="images/DSC01158.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01170.jpg" data-ngThumb="images/DSC01170.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01172.jpg" data-ngThumb="images/DSC01172.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01173.jpg" data-ngThumb="images/DSC01173.jpg">2021.11.03 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01174.jpg" data-ngThumb="images/DSC01174.jpg">2021.11.03 Spacer po Rynku</a>
-
-        <!-- 2021.10.30 Spacer po Rynku -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01141.jpg" data-ngThumb="images/DSC01141.jpg">2021.10.30 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01143.jpg" data-ngThumb="images/DSC01143.jpg">2021.10.30 Spacer po Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC01147.jpg" data-ngThumb="images/DSC01147.jpg">2021.10.30 Spacer po Rynku</a>
-
-        <!-- 2021.10.23 Park Szczytnicki i okolice -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00803.jpg" data-ngThumb="images/DSC00803.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00804.jpg" data-ngThumb="images/DSC00804.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00817.jpg" data-ngThumb="images/DSC00817.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00823.jpg" data-ngThumb="images/DSC00823.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00827.jpg" data-ngThumb="images/DSC00827.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00829.jpg" data-ngThumb="images/DSC00829.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00830.jpg" data-ngThumb="images/DSC00830.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00841.jpg" data-ngThumb="images/DSC00841.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00842.jpg" data-ngThumb="images/DSC00842.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00850.jpg" data-ngThumb="images/DSC00850.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00860.jpg" data-ngThumb="images/DSC00860.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00861.jpg" data-ngThumb="images/DSC00861.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00865.jpg" data-ngThumb="images/DSC00865.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00869.jpg" data-ngThumb="images/DSC00869.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00876.jpg" data-ngThumb="images/DSC00876.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00880.jpg" data-ngThumb="images/DSC00880.jpg">2021.10.23 Park Szczytnicki i okolice</a>
-
-        <!-- 2021.10.20 Rynek przed praca -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00649.jpg" data-ngThumb="images/DSC00649.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00654.jpg" data-ngThumb="images/DSC00654.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00656.jpg" data-ngThumb="images/DSC00656.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00663.jpg" data-ngThumb="images/DSC00663.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00699.jpg" data-ngThumb="images/DSC00699.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00703.jpg" data-ngThumb="images/DSC00703.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00710.jpg" data-ngThumb="images/DSC00710.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00728.jpg" data-ngThumb="images/DSC00728.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00741.jpg" data-ngThumb="images/DSC00741.jpg">2021.10.20 Rynek przed praca</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00753.jpg" data-ngThumb="images/DSC00753.jpg">2021.10.20 Rynek przed praca</a>
-
-        <!-- 2021.10.13 Wroclaw Rynek -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00490.jpg" data-ngThumb="images/DSC00490.jpg">2021.10.13 Wroclaw Rynek</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00500.jpg" data-ngThumb="images/DSC00500.jpg">2021.10.13 Wroclaw Rynek</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00518.jpg" data-ngThumb="images/DSC00518.jpg">2021.10.13 Wroclaw Rynek</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00526.jpg" data-ngThumb="images/DSC00526.jpg">2021.10.13 Wroclaw Rynek</a>
-
-        <!-- 2021.10.02 Wieczorny spacerpo Rynku -->
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00122.jpg" data-ngThumb="images/DSC00122.jpg">2021.10.02 Wieczorny spacerpo Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00123.jpg" data-ngThumb="images/DSC00123.jpg">2021.10.02 Wieczorny spacerpo Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00137.jpg" data-ngThumb="images/DSC00137.jpg">2021.10.02 Wieczorny spacerpo Rynku</a>
-        <a href="https://mczphotography.blob.core.windows.net/photography/DSC00149.jpg" data-ngThumb="images/DSC00149.jpg">2021.10.02 Wieczorny spacerpo Rynku</a>
+        <div class="card">
+            <a href="traffic.html"><img class="card-img-top" src="images/DSC01718.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a href="traffic.html">TRAFFIC</a>
+                </h5>
+            </div>
+        </div>
     </div>
-    <!-- ### end of the gallery definition ### -->
+
 </body>
 
 </html>

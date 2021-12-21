@@ -1,0 +1,148 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marcin Czachurski - Gallery</title>
+    <meta name="author" content="Marcin Czachurski">
+    <meta name="description" content="Marcin Czachurski - gallery.">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- nanogallery2 -->
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+    <style>
+        body {
+            background-color: #292a2f;
+            color: #f1f1f1;
+            font-size: 0.9em;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            color: #f1f1f1;
+            font-family: 'Teko', sans-serif;
+        }
+    </style>
+    <script>
+        function prepareGallery() {
+            jQuery('#nanogallery2').nanogallery2({
+
+                // GALLERY AND THUMBNAIL LAYOUT
+                thumbnailHeight: '400', thumbnailWidth: 'auto',
+                // galleryDisplayMode: 'pagination',                 // gallery pagination mode
+                // galleryMaxRows: 3,                                // gallery with max 3 rows
+                // gallerySorting: 'random',
+                thumbnailAlignment: 'fillWidth',
+                thumbnailL1GutterWidth: 20,
+                thumbnailL1GutterHeight: 20,
+                thumbnailBorderHorizontal: 1,
+                thumbnailBorderVertical: 1,
+
+                // THUMBNAIL TOOLS & LABEL
+                thumbnailL1Label: { display: true, position:'overImageOnTop', hideIcons: true, titleFontSize: '1em', align: 'left'},
+                thumbnailToolbarImage :  { topLeft: 'select', bottomRight : 'featured,display,download,cart' },
+
+                // DISPLAY ANIMATION
+                thumbnailDisplayTransition: 'flipUp',       // thumbnail display animation
+                thumbnailDisplayTransitionDuration: 400,
+                thumbnailDisplayInterval: 200,
+                thumbnailDisplayOrder: 'rowByRow',
+
+                // THUMBNAIL'S HOVER ANIMATION
+                thumbnailHoverEffect2: 'toolsSlideUp|labelSlideDown',
+                touchAnimation: true,
+                touchAutoOpenDelay: -1,
+
+                // GALLERY THEME
+                galleryTheme : { 
+                    thumbnail: { titleShadow : 'none', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#fff' },
+                    navigationPagination :  { background: '#3C4B5B', color: '#fff', colorHover: '#aaa', borderRadius: '4px' },
+                },
+
+                // DEEP LINKING
+                locationHash: false
+            });
+        }
+
+        $( document ).ready(function() {
+            prepareGallery();
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">MCZ</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="gallery.html">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>PEOPLE</h1>
+
+        <!-- ### start of the gallery definition ### -->
+        <div id="nanogallery2">
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC02677.jpg" data-ngThumb="images/DSC02677.jpg">2021.12.18 Sobotni spacer</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC02758.jpg" data-ngThumb="images/DSC02758.jpg">2021.12.18 Sobotni spacer</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC02763.jpg" data-ngThumb="images/DSC02763.jpg">2021.12.18 Sobotni spacer</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC02765.jpg" data-ngThumb="images/DSC02765.jpg">2021.12.18 Sobotni spacer</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01923.jpg" data-ngThumb="images/DSC01923.jpg">2021.12.03 Spacer do Winners</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01924.jpg" data-ngThumb="images/DSC01924.jpg">2021.12.03 Spacer do Winners</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01905.jpg" data-ngThumb="images/DSC01905.jpg">2021.12.01 Dworzec i ruch</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01621.jpg" data-ngThumb="images/DSC01621.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01630.jpg" data-ngThumb="images/DSC01630.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01616.jpg" data-ngThumb="images/DSC01616.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01613.jpg" data-ngThumb="images/DSC01613.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01604.jpg" data-ngThumb="images/DSC01604.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01601.jpg" data-ngThumb="images/DSC01601.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01569.jpg" data-ngThumb="images/DSC01569.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01562.jpg" data-ngThumb="images/DSC01562.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01557.jpg" data-ngThumb="images/DSC01557.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01556.jpg" data-ngThumb="images/DSC01556.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01544.jpg" data-ngThumb="images/DSC01544.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01535.jpg" data-ngThumb="images/DSC01535.jpg">2021.11.20 Jarmark świąteczny</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01496.jpg" data-ngThumb="images/DSC01496.jpg">2021.11.17 Spacer dworzec i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00803.jpg" data-ngThumb="images/DSC00803.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00804.jpg" data-ngThumb="images/DSC00804.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00817.jpg" data-ngThumb="images/DSC00817.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00827.jpg" data-ngThumb="images/DSC00827.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00842.jpg" data-ngThumb="images/DSC00842.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00850.jpg" data-ngThumb="images/DSC00850.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00861.jpg" data-ngThumb="images/DSC00861.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00876.jpg" data-ngThumb="images/DSC00876.jpg">2021.10.23 Park Szczytnicki i okolice</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00699.jpg" data-ngThumb="images/DSC00699.jpg">2021.10.20 Rynek przed praca</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00703.jpg" data-ngThumb="images/DSC00703.jpg">2021.10.20 Rynek przed praca</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00710.jpg" data-ngThumb="images/DSC00710.jpg">2021.10.20 Rynek przed praca</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00728.jpg" data-ngThumb="images/DSC00728.jpg">2021.10.20 Rynek przed praca</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00741.jpg" data-ngThumb="images/DSC00741.jpg">2021.10.20 Rynek przed praca</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00753.jpg" data-ngThumb="images/DSC00753.jpg">2021.10.20 Rynek przed praca</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00490.jpg" data-ngThumb="images/DSC00490.jpg">2021.10.13 Wroclaw Rynek</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00518.jpg" data-ngThumb="images/DSC00518.jpg">2021.10.13 Wroclaw Rynek</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00526.jpg" data-ngThumb="images/DSC00526.jpg">2021.10.13 Wroclaw Rynek</a>
+            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00400.jpg" data-ngThumb="images/DSC00400.jpg">2021.10.05 Man in the shop</a>
+        </div>
+        <!-- ### end of the gallery definition ### -->
+    </div>
+</body>
+
+</html>
