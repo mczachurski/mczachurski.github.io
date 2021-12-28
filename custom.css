@@ -1,11 +1,22 @@
 body {
-    background-color: #292a2f;
-    color: #f1f1f1;
+    background-color: #ffffff;
+    color: #292a2f;
     font-size: 0.9em;
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #292a2f;
+        color: #f1f1f1;
+    }
+}
+
+/**
+ * Navigation Bar 
+ */
 
 .navbar-brand {
     font-family: 'Licorice', cursive;
@@ -21,9 +32,206 @@ body {
 .navbar-nav .nav-link {
     font-family: 'Teko', sans-serif;
     font-size: 1.6em;
+    color: #292a2f;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4a4c57;
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar-nav .nav-link {
+        color: #f1f1f1;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #cfcfcf;
+    }
 }
 
 .navbar-nav-svg {
     width: 1rem;
     height: 1rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    display: inline-block;
+    line-height: 40px;
+}
+
+@media (min-width: 992px) {
+    div#navbarText a::after {
+        background-color: #0af;
+        content: '';
+        height: 4px;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        transform: scalex(0);
+        transform-origin: bottom right;
+        transition: transform .4s cubic-bezier(.86, 0, .07, 1);
+        width: 100%
+    }
+    div#navbarText a:hover::after {
+        transform: scalex(1);
+        transform-origin: bottom left
+    }
+}
+
+
+/**
+ * Tools
+ */
+
+h1 {
+    color: #292a2f;
+    font-family: 'Teko', sans-serif;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #292a2f;
+}
+
+.description {
+    color: #292a2f;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+@media (prefers-color-scheme: dark) {
+    h1 {
+        color: #f1f1f1;
+    }
+    a,
+    a:visited,
+    a:hover {
+        color: #f1f1f1;
+    }
+    .description {
+        color: #f1f1f1;
+    }
+}
+
+
+/**
+ * Resume.
+ */
+
+.resume {
+    color: #292a2f;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.resume .item {
+    margin-bottom: 16px;
+}
+
+.resume .title {
+    font-weight: 500;
+    border-left: 4px solid #0af;
+    padding-left: 8px;
+}
+
+.resume .subtitle {
+    padding-left: 12px;
+}
+
+.resume .subtitle a,
+.resume .subtitle a:hover,
+.resume .subtitle a:visited {
+    text-decoration: none;
+    color: #292a2f;
+}
+
+@media (prefers-color-scheme: dark) {
+    .resume {
+        color: #f1f1f1;
+    }
+    .resume .subtitle a,
+    .resume .subtitle a:hover,
+    .resume .subtitle a:visited {
+        color: #f1f1f1;
+    }
+}
+
+
+/**
+ * Gallery.
+ */
+
+.container-gallery {
+    margin-top: 20px;
+    display: flex;
+    /* or inline-flex */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.card-image-title a {
+    text-decoration: none;
+    color: #292a2f;
+}
+
+.card-image-title a:visited {
+    text-decoration: none;
+    color: #292a2f;
+}
+
+.card-image-title a:hover {
+    text-decoration: none;
+    color: #292a2f;
+}
+
+.card-image-img-top {
+    border: 1px solid #292a2f;
+    width: 100%;
+    max-width: 400px;
+}
+
+.card-image-title {
+    font-size: 1.8em;
+    color: #292a2f;
+    font-family: 'Teko', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card-image-title a {
+        color: #f1f1f1;
+    }
+    .card-image-title a:visited {
+        color: #f1f1f1;
+    }
+    .card-image-title a:hover {
+        color: #f1f1f1;
+    }
+    .card-image-img-top {
+        border: 1px solid white;
+    }
+    .card-image-title {
+        color: #f1f1f1;
+    }
+}
+
+
+/**
+ * Gallery
+ */
+
+.nanogallery_gallerytheme_custom_nanogallery2 .nGY2GThumbnail {
+    border-color: #292a2f !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .nanogallery_gallerytheme_custom_nanogallery2 .nGY2GThumbnail {
+        border-color: #f1f1f1 !important;
+    }
 }
