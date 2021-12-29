@@ -173,6 +173,10 @@ a:hover {
     font-size: 1.8em;
     color: #292a2f;
     font-family: 'Teko', sans-serif;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .portfolio .title a,
