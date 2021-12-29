@@ -1,4 +1,21 @@
-function prepareGallery() {
+const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+
+const setColorScheme = e => {
+    if (e.matches) {
+        $('nav').removeClass('navbar-light');
+        $('nav').addClass('navbar-dark');
+    } else {
+        $('nav').removeClass('navbar-dark');
+        $('nav').addClass('navbar-light');
+    }
+}
+
+function initTheme() {
+    setColorScheme(colorSchemeQueryList);
+    colorSchemeQueryList.addEventListener("change", setColorScheme);
+}
+
+function initGallery() {
     jQuery('#nanogallery2').nanogallery2({
 
         // GALLERY AND THUMBNAIL LAYOUT
@@ -46,3 +63,5 @@ function prepareGallery() {
         locationHash: false
     });
 }
+
+
