@@ -159,7 +159,7 @@ a:hover {
     display: flex;
     /* or inline-flex */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     row-gap: 20px;
 }
 
