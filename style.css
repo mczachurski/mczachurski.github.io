@@ -91,17 +91,27 @@ a:hover {
     padding-bottom: 20px;
 }
 
+.border-1 {
+    border: 1px solid #000;
+}
+
 @media (prefers-color-scheme: dark) {
     h1 {
         color: #f1f1f1;
     }
+
     a,
     a:visited,
     a:hover {
         color: #f1f1f1;
     }
+
     .description {
         color: #f1f1f1;
+    }
+
+    .border-1 {
+        border: 1px solid #fff;
     }
 }
 
