@@ -15,8 +15,22 @@ function initTheme() {
     colorSchemeQueryList.addEventListener("change", setColorScheme);
 }
 
-function initGallery() {
+function initGallery(images) {
+
+    let items = [];
+    images.forEach(element => {
+        items.push({
+            downloadURL:    'https://mczphotography.blob.core.windows.net/photography/' + element.file + '.jpg',
+            src:            'https://mczphotography.blob.core.windows.net/photography/' + element.file + 'm.jpg',
+            srct:           'images/' + element.file + 's.jpg',
+            title:          element.title
+        });
+    });
+
     jQuery('#nanogallery2').nanogallery2({
+
+        // ITEMS DISPLAYED
+        items: items,
 
         // GALLERY AND THUMBNAIL LAYOUT
         thumbnailHeight: '400',

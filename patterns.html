@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css?v=8vnsmqwd">
 
     <!-- Custom JS -->
-    <script src="scripts.js?v=oi6x2ltf"></script>
+    <script src="scripts.js?v=uubfzxft"></script>
 
     <style>
         div#navbarText a::after {
@@ -126,32 +126,35 @@
         </div>
 
         <!-- Gallery definition -->
-        <div id="nanogallery2">
-            <!-- 2022.01.05 Spacer przed pracą -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC03271.jpg" data-ngThumb="images/DSC03271.jpg">2022.01.05</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC03173.jpg" data-ngThumb="images/DSC03173.jpg">2022.01.05</a>
-
-            <!-- 2022.01.02 Giełda na Świebodzkim -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC03126.jpg" data-ngThumb="images/DSC03126.jpg">2022.01.02</a>
-
-            <!-- 2021.12.26 -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC02928.jpg" data-ngThumb="images/DSC02928.jpg">2021.12.26</a>
-
-            <!-- 2021.10.23 Park Szczytnicki i okolice -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00860.jpg" data-ngThumb="images/DSC00860.jpg">2021.10.23</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00865.jpg" data-ngThumb="images/DSC00865.jpg">2021.10.23</a>
-
-            <!-- 2021.10.05 -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00384.jpg" data-ngThumb="images/DSC00384.jpg">2021.10.05</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00352.jpg" data-ngThumb="images/DSC00352.jpg">2021.10.02</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00376.jpg" data-ngThumb="images/DSC00376.jpg">2021.10.02</a>
-        </div>
+        <div id="nanogallery2"></div>
     </div>
 
     <!-- JS scripts -->
     <script>
         initTheme();
-        initGallery();
+
+        let images = [
+            // 2022.01.05 Spacer przed pracą
+            { title: '2022.01.05', file: 'DSC03271' },
+            { title: '2022.01.05', file: 'DSC03173' },
+            
+            // 2022.01.02 Giełda na Świebodzkim
+            { title: '2022.01.02', file: 'DSC03126' },
+
+            // 2021.12.26
+            { title: '2021.12.26', file: 'DSC02928' },
+
+            // 2021.10.23 Park Szczytnicki i okolice
+            { title: '2021.10.23', file: 'DSC00860' },
+            { title: '2021.10.23', file: 'DSC00865' },
+
+            // 2021.10.05
+            { title: '2021.10.05', file: 'DSC00384' },
+            { title: '2021.10.02', file: 'DSC00352' },
+            { title: '2021.10.02', file: 'DSC00376' }
+        ];
+
+        initGallery(images);
     </script>
 </body>
 </html>

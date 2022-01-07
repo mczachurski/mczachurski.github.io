@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css?v=8vnsmqwd">
 
     <!-- Custom JS -->
-    <script src="scripts.js?v=oi6x2ltf"></script>
+    <script src="scripts.js?v=uubfzxft"></script>
 
     <style>
         div#navbarText a::after {
@@ -125,35 +125,38 @@
         </div>
 
         <!-- Gallery definition -->
-        <div id="nanogallery2">
-            <!-- 2021.11.11 Marsz niepodległości -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01334.jpg" data-ngThumb="images/DSC01334.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01338.jpg" data-ngThumb="images/DSC01338.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01357.jpg" data-ngThumb="images/DSC01357.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01381.jpg" data-ngThumb="images/DSC01381.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01385.jpg" data-ngThumb="images/DSC01385.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01387.jpg" data-ngThumb="images/DSC01387.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01388.jpg" data-ngThumb="images/DSC01388.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01389.jpg" data-ngThumb="images/DSC01389.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01390.jpg" data-ngThumb="images/DSC01390.jpg">2021.11.11</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01391.jpg" data-ngThumb="images/DSC01391.jpg">2021.11.11</a>
-
-            <!-- 2021.11.06 Strajk kobiet -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01209.jpg" data-ngThumb="images/DSC01209.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01214.jpg" data-ngThumb="images/DSC01214.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01215.jpg" data-ngThumb="images/DSC01215.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01218.jpg" data-ngThumb="images/DSC01218.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01227.jpg" data-ngThumb="images/DSC01227.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01229.jpg" data-ngThumb="images/DSC01229.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01255.jpg" data-ngThumb="images/DSC01255.jpg">2021.11.06</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01272.jpg" data-ngThumb="images/DSC01272.jpg">2021.11.06</a>
-        </div>
+        <div id="nanogallery2"></div>
     </div>
 
     <!-- JS scripts -->
     <script>
         initTheme();
-        initGallery();
+
+        let images = [
+            // 2021.11.11 Marsz niepodległości
+            { title: '2021.11.11', file: 'DSC01334' },
+            { title: '2021.11.11', file: 'DSC01338' },
+            { title: '2021.11.11', file: 'DSC01357' },
+            { title: '2021.11.11', file: 'DSC01381' },
+            { title: '2021.11.11', file: 'DSC01385' },
+            { title: '2021.11.11', file: 'DSC01387' },
+            { title: '2021.11.11', file: 'DSC01388' },
+            { title: '2021.11.11', file: 'DSC01389' },
+            { title: '2021.11.11', file: 'DSC01390' },
+            { title: '2021.11.11', file: 'DSC01391' },
+
+            // 2021.11.06 Strajk kobiet
+            { title: '2021.11.06', file: 'DSC01209' },
+            { title: '2021.11.06', file: 'DSC01214' },
+            { title: '2021.11.06', file: 'DSC01215' },
+            { title: '2021.11.06', file: 'DSC01218' },
+            { title: '2021.11.06', file: 'DSC01227' },
+            { title: '2021.11.06', file: 'DSC01229' },
+            { title: '2021.11.06', file: 'DSC01255' },
+            { title: '2021.11.06', file: 'DSC01272' }
+        ];
+
+        initGallery(images);
     </script>
 </body>
 </html>

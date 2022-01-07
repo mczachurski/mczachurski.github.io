@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css?v=8vnsmqwd">
 
     <!-- Custom JS -->
-    <script src="scripts.js?v=oi6x2ltf"></script>
+    <script src="scripts.js?v=uubfzxft"></script>
 
     <style>
         div#navbarText a::after {
@@ -126,34 +126,37 @@
         </div>
 
         <!-- Gallery definition -->
-        <div id="nanogallery2">
-            <!-- 2021.12.01 Dworzec i ruch -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01760.jpg" data-ngThumb="images/DSC01760.jpg">2021.12.01</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01892.jpg" data-ngThumb="images/DSC01892.jpg">2021.12.01</a>
-            
-            <!-- 2021.11.28 Pierwszy śnieg -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01718.jpg" data-ngThumb="images/DSC01718.jpg">2021.11.28</a>
-
-            <!-- 2021.11.20 Jarmark świąteczny -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01623.jpg" data-ngThumb="images/DSC01623.jpg">2021.11.20</a>
-
-            <!-- 2021.11.17 Spacer dworzec i okolice -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01457.jpg" data-ngThumb="images/DSC01457.jpg">2021.11.17</a>
-            
-            <!-- 2021.11.10 Spacer po rynku -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01309.jpg" data-ngThumb="images/DSC01309.jpg">2021.11.10</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01310.jpg" data-ngThumb="images/DSC01310.jpg">2021.11.10</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01311.jpg" data-ngThumb="images/DSC01311.jpg">2021.11.10</a>
-
-            <!-- 2021.10.23 Park Szczytnicki i okolice -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC00880.jpg" data-ngThumb="images/DSC00880.jpg">2021.10.23</a>
-        </div>
+        <div id="nanogallery2"></div>
     </div>
 
     <!-- JS scripts -->
     <script>
         initTheme();
-        initGallery();
+
+        let images = [
+            // 2021.12.01 Dworzec i ruch
+            { title: '2021.12.01', file: 'DSC01760' },
+            { title: '2021.12.01', file: 'DSC01892' },
+            
+            // 2021.11.28 Pierwszy śnieg
+            { title: '2021.11.28', file: 'DSC01718' },
+
+            // 2021.11.20 Jarmark świąteczny
+            { title: '2021.11.20', file: 'DSC01623' },
+
+            // 2021.11.17 Spacer dworzec i okolice
+            { title: '2021.11.17', file: 'DSC01457' },
+            
+            // 2021.11.10 Spacer po rynku
+            { title: '2021.11.10', file: 'DSC01309' },
+            { title: '2021.11.10', file: 'DSC01310' },
+            { title: '2021.11.10', file: 'DSC01311' },
+
+            // 2021.10.23 Park Szczytnicki i okolice
+            { title: '2021.10.23', file: 'DSC00880' }
+        ];
+
+        initGallery(images);
     </script>
 </body>
 </html>

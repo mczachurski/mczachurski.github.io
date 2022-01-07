@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css?v=8vnsmqwd">
 
     <!-- Custom JS -->
-    <script src="scripts.js?v=oi6x2ltf"></script>
+    <script src="scripts.js?v=uubfzxft"></script>
 
     <style>
         div#navbarText a::after {
@@ -123,17 +123,20 @@
         </div>
 
         <!-- Gallery definition -->
-        <div id="nanogallery2">
-            <!-- 2021.10.30 Spacer po Rynku -->
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01141.jpg" data-ngThumb="images/DSC01141.jpg">2021.10.30</a>
-            <a href="https://mczphotography.blob.core.windows.net/photography/DSC01147.jpg" data-ngThumb="images/DSC01147.jpg">2021.10.30</a>
-        </div>
+        <div id="nanogallery2"></div>
     </div>
 
     <!-- JS scripts -->
     <script>
         initTheme();
-        initGallery();
+
+        let images = [
+            // 2021.10.30 Spacer po Rynku
+            { title: '2021.10.30', file: 'DSC01141' },
+            { title: '2021.10.30', file: 'DSC01147' }
+        ];
+
+        initGallery(images);
     </script>
 </body>
 </html>
