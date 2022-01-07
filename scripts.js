@@ -1,3 +1,8 @@
+const Position = {
+    Horizontal: 0,
+    Vertical: 1
+};
+
 const colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 
 const setColorScheme = e => {
@@ -23,6 +28,8 @@ function initGallery(images) {
             downloadURL:    'https://mczphotography.blob.core.windows.net/photography/' + element.file + '.jpg',
             src:            'https://mczphotography.blob.core.windows.net/photography/' + element.file + 'm.jpg',
             srct:           'images/' + element.file + 's.jpg',
+            imgtWidth:      element.position === Position.Horizontal ? 800 : 533,
+            imgtHeight:     element.position === Position.Horizontal ? 533 : 800,
             title:          element.title
         });
     });
