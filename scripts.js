@@ -30,7 +30,8 @@ function initGallery(images) {
             srct:           'images/' + element.file + 's.jpg',
             imgtWidth:      element.position === Position.Horizontal ? 800 : 533,
             imgtHeight:     element.position === Position.Horizontal ? 533 : 800,
-            title:          element.title
+            title:          element.title,
+            imageDominantColor: element.color
         });
     });
 
