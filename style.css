@@ -141,6 +141,10 @@ a:hover {
     padding-left: 12px;
 }
 
+.resume .subtitle small {
+    font-size: 0.8em;
+}
+
 .resume .subtitle a,
 .resume .subtitle a:hover,
 .resume .subtitle a:visited {
