@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Marcin Czachurski - Photography</title>
     <meta name="author" content="Marcin Czachurski">
-    <meta name="description" content="Marcin Czachurski - Metrópolis">
+    <meta name="description" content="Marcin Czachurski - Un pour tous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
@@ -24,14 +24,14 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="style.css?v=twulni43">
+    <link rel="stylesheet" href="../style.css?v=twulni43">
 
     <!-- Custom JS -->
-    <script src="scripts.js?v=qn15rnip"></script>
+    <script src="../scripts.js?v=xt7eqpkj"></script>
 
     <style>
         div#navbarText a::after {
-            background-color: #37b8ee;
+            background-color: #a537ee;
         }
     </style>
 </head>
@@ -40,7 +40,7 @@
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand me-4" href="index.html">Marcin Czachurski</a>
+            <a class="navbar-brand me-4" href="../index.html">Marcin Czachurski</a>
 
             <!-- Navigation toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,10 +51,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">About me</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="gallery.html">Photography</a>
+                        <a class="nav-link active" href="../gallery.html">Photography</a>
                     </li>
                 </ul>
             </div>
@@ -112,15 +112,16 @@
     <!-- Page content -->
     <div class="container">
         <!-- Title -->
-        <h1 style="color: #37b8ee">METRÓPOLIS</h1>
+        <h1 style="color: #a537ee">UN POUR TOUS</h1>
 
         <!-- Description -->
         <div class="description">
-            Several thousand years ago, mankind underwent a revolution known as the Neolithic revolution. Nomadic lifestyle
-            has been changed into a sedentary one. The first cities and civilizations arose. It was the great cities that
-            began to mean more and more in the history of mankind. Here the most eminent scholars, poets and philosophers gathered.
-            In them, successive revolutions - scientific, economic or political - emerged. Many of the first cities did not survive
-            to our times, but they showed the way. The path that humanity is still following.
+            We live in a completely divided world. Half of the population hates the other half. Nationalists hate liberals.
+            Believers hate unbelievers. Vaccines hate anti-vaccines. Blue people hate green. Square people hate round ones.
+            All because of the message coming to us from the media such as TV, radio, newspapers, social networks. Because of
+            the bubbles in which social networks close us. A message created by a handful of people overwhelmed by the possession
+            of power. They don't know yet that they are going to fail because people have more love, compassion and willing
+            to learn than hate. At least I hope so.
         </div>
 
         <!-- Gallery definition -->
@@ -132,88 +133,27 @@
         initTheme();
 
         let images = [
-            // 2022.01.19 Spacer po rynku
-            { title: '2022.01.19', file: 'DSC03566', position: Position.Horizontal, color: '#9696AE' },
-            { title: '2022.01.19', file: 'DSC03578', position: Position.Horizontal, color: '#9D92A3' },
-            { title: '2022.01.19', file: 'DSC03552', position: Position.Horizontal, color: '#565766' },
-            { title: '2022.01.19', file: 'DSC03549', position: Position.Horizontal, color: '#191D2F' },
+            // 2021.11.11 Marsz niepodległości
+            { title: '2021.11.11', file: 'DSC01334', position: Position.Horizontal, color: '#241635' },
+            { title: '2021.11.11', file: 'DSC01338', position: Position.Horizontal, color: '#1B2158' },
+            { title: '2021.11.11', file: 'DSC01357', position: Position.Horizontal, color: '#2C1120' },
+            { title: '2021.11.11', file: 'DSC01381', position: Position.Horizontal, color: '#0D0110' },
+            { title: '2021.11.11', file: 'DSC01385', position: Position.Horizontal, color: '#2F091F' },
+            { title: '2021.11.11', file: 'DSC01387', position: Position.Horizontal, color: '#0F010E' },
+            { title: '2021.11.11', file: 'DSC01388', position: Position.Horizontal, color: '#0B010C' },
+            { title: '2021.11.11', file: 'DSC01389', position: Position.Horizontal, color: '#0E010E' },
+            { title: '2021.11.11', file: 'DSC01390', position: Position.Horizontal, color: '#0A010C' },
+            { title: '2021.11.11', file: 'DSC01391', position: Position.Horizontal, color: '#0A010D' },
 
-            // 2022.01.11 Dworzec PKP
-            { title: '2022.01.11', file: 'DSC03354', position: Position.Horizontal, color: '#ACADAF' },
-            { title: '2022.01.11', file: 'DSC03355', position: Position.Horizontal, color: '#4E4D52' },
-
-            // 2022.01.05 Spacer przed pracą
-            { title: '2022.01.05', file: 'DSC03188', position: Position.Horizontal, color: '#026DC9' },
-            { title: '2022.01.05', file: 'DSC03174', position: Position.Horizontal, color: '#282530' },
-            { title: '2022.01.05', file: 'DSC03180', position: Position.Horizontal, color: '#2A274C' },
-            { title: '2022.01.05', file: 'DSC03266', position: Position.Horizontal, color: '#9F989F' },
-            { title: '2022.01.05', file: 'DSC03262', position: Position.Horizontal, color: '#A9A1A7' },
-
-            // 2021.12.26
-            { title: '2021.12.26', file: 'DSC02916', position: Position.Horizontal, color: '#6D90D1' },
-            { title: '2021.12.26', file: 'DSC02917', position: Position.Horizontal, color: '#291C1F' },
-            { title: '2021.12.26', file: 'DSC02936', position: Position.Vertical, color: '#292D49' },
-
-            // 2021.12.21 Wieczorny spacer
-            { title: '2021.12.21', file: 'DSC02820', position: Position.Horizontal, color: '#101847' },
-
-            // 2021.12.03 Spacer do Winners
-            { title: '2021.12.03', file: 'DSC01942', position: Position.Horizontal, color: '#242433' },
-
-            // 2021.11.27 Wieczorna sesja
-            { title: '2021.11.27', file: 'DSC01700', position: Position.Horizontal, color: '#051425' },
-            { title: '2021.11.27', file: 'DSC01688', position: Position.Horizontal, color: '#2C2929' },
-
-            // 2021.11.17 Spacer dworzec i okolice
-            { title: '2021.11.17', file: 'DSC01512', position: Position.Vertical, color: '#C9C9D0' },
-            { title: '2021.11.17', file: 'DSC01504', position: Position.Horizontal, color: '#C7C5CA' },
-            { title: '2021.11.17', file: 'DSC01485', position: Position.Horizontal, color: '#132B4D' },
-            { title: '2021.11.17', file: 'DSC01442', position: Position.Horizontal, color: '#0E112A' },
-            { title: '2021.11.17', file: 'DSC01440', position: Position.Vertical, color: '#101733' },
-            { title: '2021.11.17', file: 'DSC01439', position: Position.Horizontal, color: '#121C36' },
-            { title: '2021.11.17', file: 'DSC01438', position: Position.Horizontal, color: '#514C48' },
-            { title: '2021.11.17', file: 'DSC01436', position: Position.Horizontal, color: '#15192A' },
-            { title: '2021.11.17', file: 'DSC01432', position: Position.Vertical, color: '#981736' },
-            
-            // 2021.11.10 Spacer po rynku
-            { title: '2021.11.10', file: 'DSC01293', position: Position.Vertical, color: '#625B68' },
-            { title: '2021.11.10', file: 'DSC01299', position: Position.Vertical, color: '#221B1F' },
-            { title: '2021.11.10', file: 'DSC01304', position: Position.Vertical, color: '#A49296' },
-            { title: '2021.11.03', file: 'DSC01154', position: Position.Vertical, color: '#5F2A2A' },
-            { title: '2021.11.03', file: 'DSC01155', position: Position.Horizontal, color: '#5D2D2C' },
-            { title: '2021.11.03', file: 'DSC01156', position: Position.Vertical, color: '#4F1C21' },
-            { title: '2021.11.03', file: 'DSC01157', position: Position.Vertical, color: '#251F1F' },
-            { title: '2021.11.03', file: 'DSC01158', position: Position.Vertical, color: '#5D1E0F' },
-            { title: '2021.11.03', file: 'DSC01170', position: Position.Horizontal, color: '#1A0C18' },
-            { title: '2021.11.03', file: 'DSC01172', position: Position.Horizontal, color: '#2B295A' },
-            { title: '2021.11.03', file: 'DSC01173', position: Position.Horizontal, color: '#140809' },
-            { title: '2021.11.03', file: 'DSC01174', position: Position.Horizontal, color: '#130808' },
-            { title: '2021.10.30', file: 'DSC01143', position: Position.Horizontal, color: '#55596C' },
-
-            // 2021.10.23 Park Szczytnicki i okolice
-            { title: '2021.10.23', file: 'DSC00823', position: Position.Horizontal, color: '#132122' },
-            { title: '2021.10.23', file: 'DSC00829', position: Position.Horizontal, color: '#505771' },
-            { title: '2021.10.23', file: 'DSC00830', position: Position.Vertical, color: '#4C536E' },
-            { title: '2021.10.23', file: 'DSC00841', position: Position.Horizontal, color: '#688FCD' },
-            { title: '2021.10.23', file: 'DSC00869', position: Position.Vertical, color: '#592F30' },
-            
-            // 2021.10.20 Rynek przed praca
-            { title: '2021.10.20', file: 'DSC00649', position: Position.Vertical, color: '#D4DFED' },
-            { title: '2021.10.20', file: 'DSC00654', position: Position.Vertical, color: '#4D3F40' },
-            { title: '2021.10.20', file: 'DSC00656', position: Position.Horizontal, color: '#666F96' },
-            { title: '2021.10.20', file: 'DSC00663', position: Position.Vertical, color: '#996A59' },
-            
-            // 2021.10.13 Wroclaw Rynek
-            { title: '2021.10.13', file: 'DSC00500', position: Position.Vertical, color: '#261D1D' },
-
-            // 2021.10.02 Wieczorny spacerpo Rynku
-            { title: '2021.10.02', file: 'DSC00122', position: Position.Vertical, color: '#213353' },
-            { title: '2021.10.02', file: 'DSC00123', position: Position.Horizontal, color: '#1A0D22' },
-            { title: '2021.10.02', file: 'DSC00137', position: Position.Vertical, color: ',#130904' },
-            { title: '2021.10.02', file: 'DSC00149', position: Position.Vertical, color: '#300F03' },
-            
-            // 2021.10.02
-            { title: '2021.10.02', file: 'DSC00388', position: Position.Horizontal, color: '#1A1A1A' }
+            // 2021.11.06 Strajk kobiet
+            { title: '2021.11.06', file: 'DSC01209', position: Position.Vertical, color: '#201209' },
+            { title: '2021.11.06', file: 'DSC01214', position: Position.Vertical, color: '#21201C' },
+            { title: '2021.11.06', file: 'DSC01215', position: Position.Vertical, color: '#18160E' },
+            { title: '2021.11.06', file: 'DSC01218', position: Position.Horizontal, color: '#1F1B13' },
+            { title: '2021.11.06', file: 'DSC01227', position: Position.Vertical, color: '#190C17' },
+            { title: '2021.11.06', file: 'DSC01229', position: Position.Vertical, color: '#0C030A' },
+            { title: '2021.11.06', file: 'DSC01255', position: Position.Horizontal, color: '#131626' },
+            { title: '2021.11.06', file: 'DSC01272', position: Position.Horizontal, color: '#020518' }
         ];
 
         initGallery(images);
