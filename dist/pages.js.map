@@ -1,1 +1,0 @@
-{"version":3,"file":"pages.js","sourceRoot":"","sources":["../src/pages.ts"],"names":[],"mappings":"AAAA,MAAM,CAAN,IAAY,KAKX;AALD,WAAY,KAAK;IACb,uCAAO,CAAA;IACP,mCAAK,CAAA;IACL,uCAAO,CAAA;IACP,qCAAM,CAAA;AACV,CAAC,EALW,KAAK,KAAL,KAAK,QAKhB","sourcesContent":["export enum Pages {\n    unknown,\n    index,\n    gallery,\n    photos\n}\n"]}
