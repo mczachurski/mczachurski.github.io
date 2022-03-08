@@ -181,6 +181,15 @@ a:hover {
     border: 1px solid #292a2f;
     width: 100%;
     max-width: 400px;
+    transition: opacity 0.5s;
+}
+
+.portfolio .image.hidden {
+    opacity: 0;
+}
+
+.portfolio .image.display-none {
+    display: none;
 }
 
 .portfolio .title {
