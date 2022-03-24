@@ -17,7 +17,19 @@ const setColorScheme = e => {
 
 function initTheme() {
     setColorScheme(colorSchemeQueryList);
-    colorSchemeQueryList.addEventListener("change", setColorScheme);
+
+    try {
+        // Chrome & Firefox & Safar >= 14
+        colorSchemeQueryList.addEventListener("change", setColorScheme);
+    } catch (error1) {
+        console.error(error1);
+        try {
+            // Safari < 14
+            colorSchemeQueryList.addListener(setColorScheme);
+        } catch (error2) {
+            console.error(error2);
+        }
+    }
 }
 
 function initGallery(images) {
