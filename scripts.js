@@ -39,11 +39,12 @@ function initGallery(images) {
         items.push({
             downloadURL:    'https://mczphotography.blob.core.windows.net/photography/' + element.file + '.jpg',
             src:            'https://mczphotography.blob.core.windows.net/photography/' + element.file + 'm.jpg',
-            srct:           '../images/' + element.file + 's.jpg',
+            srct:           './images/' + element.file + 's.jpg',
             imgtWidth:      element.position === Position.Horizontal ? 800 : 533,
             imgtHeight:     element.position === Position.Horizontal ? 533 : 800,
             title:          element.title,
-            imageDominantColor: element.color
+            imageDominantColor: element.color,
+            tags:           element.tags
         });
     });
 
@@ -51,6 +52,13 @@ function initGallery(images) {
 
         // ITEMS DISPLAYED
         items: items,
+
+        // galleryDisplayMode: 'rows',
+        // galleryMaxRows: 10,
+
+        // KEYWORD FILTERING
+        galleryFilterTags: true,
+        galleryFilterTagsMode: 'single',
 
         // GALLERY AND THUMBNAIL LAYOUT
         thumbnailHeight: '400',
@@ -60,6 +68,7 @@ function initGallery(images) {
         thumbnailL1GutterHeight: 20,
         thumbnailBorderHorizontal: 1,
         thumbnailBorderVertical: 1,
+        
 
         // THUMBNAIL TOOLS & LABEL
         thumbnailL1Label: {
@@ -75,7 +84,7 @@ function initGallery(images) {
         },
 
         // DISPLAY ANIMATION
-        thumbnailDisplayTransition: 'flipUp', // thumbnail display animation
+        thumbnailDisplayTransition: 'slideUp', // thumbnail display animation
         thumbnailDisplayTransitionDuration: 400,
         thumbnailDisplayInterval: 200,
         thumbnailDisplayOrder: 'rowByRow',
@@ -91,6 +100,8 @@ function initGallery(images) {
                 titleColor: '#fff',
                 borderColor: '#fff'
             },
+            navigationBreadcrumb: { background : '#3C4B5B' },
+            navigationFilter: { background : '#ee375f', backgroundSelected: '#ee375f', color: '#fff' }
         },
 
         // DEEP LINKING

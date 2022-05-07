@@ -163,69 +163,6 @@ a:hover {
     }
 }
 
-
-/**
- * Portfolio.
- */
-
-.portfolio {
-    margin-top: 20px;
-    display: flex;
-    /* or inline-flex */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 20px;
-}
-
-.portfolio .image {
-    border: 1px solid #292a2f;
-    width: 100%;
-    max-width: 400px;
-    transition: opacity 0.5s;
-}
-
-.portfolio .image.hidden {
-    opacity: 0;
-}
-
-.portfolio .image.display-none {
-    display: none;
-}
-
-.portfolio .title {
-    font-size: 1.8em;
-    color: #292a2f;
-    font-family: 'Teko', sans-serif;
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.portfolio .title a,
-.card-image-title a:visited,
-.card-image-title a:hover {
-    text-decoration: none;
-    color: #292a2f;
-}
-
-@media (prefers-color-scheme: dark) {
-    .portfolio .title {
-        color: #f1f1f1;
-    }
-
-    .portfolio .title a,
-    .card-image-title a:visited,
-    .card-image-title a:hover {
-        color: #f1f1f1;
-    }
-
-    .portfolio .image {
-        border: 1px solid white;
-    }
-}
-
-
 /**
  * Gallery.
  */
