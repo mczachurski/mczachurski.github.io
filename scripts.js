@@ -37,7 +37,6 @@ function initGallery(images) {
     let items = [];
     images.forEach(element => {
         items.push({
-            downloadURL:    'https://mczphotography.blob.core.windows.net/photography/' + element.file + '.jpg',
             src:            'https://mczphotography.blob.core.windows.net/photography/' + element.file + 'm.jpg',
             srct:           './images/' + element.file + 's.jpg',
             imgtWidth:      element.position === Position.Horizontal ? 800 : 533,
@@ -80,7 +79,7 @@ function initGallery(images) {
         },
         thumbnailToolbarImage: {
             topLeft: 'select',
-            bottomRight: 'featured,display,download,cart'
+            bottomRight: 'featured,display,cart'
         },
 
         // DISPLAY ANIMATION
