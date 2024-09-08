@@ -145,6 +145,13 @@ a:hover {
     font-size: 0.8em;
 }
 
+.portfolio {
+    float: right;
+}
+
+.portfolio a,
+.portfolio a:hover,
+.portfolio a:visited,
 .resume .subtitle a,
 .resume .subtitle a:hover,
 .resume .subtitle a:visited {
@@ -156,6 +163,10 @@ a:hover {
     .resume {
         color: #f1f1f1;
     }
+
+    .portfolio a,
+    .portfolio a:hover,
+    .portfolio a:visited,
     .resume .subtitle a,
     .resume .subtitle a:hover,
     .resume .subtitle a:visited {
